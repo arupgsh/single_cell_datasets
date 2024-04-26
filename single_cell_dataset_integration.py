@@ -62,9 +62,9 @@ if text_search:
 
     #Sort the data by date
     if date_sort == "Oldest":
-        df_search = df.sort_values('Date', ascending = True)
+        df_search = df_search.sort_values('Date', ascending = True)
     else:
-        df_search = df.sort_values('Date', ascending = False)
+        df_search = df_search.sort_values('Date', ascending = False)
 
     # if cell_counts:
     #     df_search = df_search[df_search["Reported cells total"].between(cell_counts[0], cell_counts[1])]
